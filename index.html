@@ -36,25 +36,44 @@ background-position: center;}
     </style>
 </head>     
 <body>
-    <!--Header-->
-    <header>
-        <div class="header__container">
-            <div>
-                <a href="#"><img src="images/pi.ico" alt="Personal_Identity"></a>
-                <ing></ing>
-            </div>
-            <nav> <!--Contact US 버튼을 네비게이션 기능을 활용하여 언제든 연락할 수 있게 구현 계획-->
-                    <!--h ref="images/ContactNav.png"-->
-                    <!--네비게이션 기능 구현에 관해 좌측에 어디든 이동가능한 버튼을 남겨두고, 우측에 연락 가능한 네비게이션을 구현하여 contact 페이지로 이동시킬 생각-->
-                <ul>
-                    <li><a href="#prologue">Prologue</a></li>
-                    <li><a href="#viewpoint">Viewpoint</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#epilogue">Epilogue</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
+   <!-- Header -->
+   <header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <a href="#">
+                <img src="images/pi.ico" alt="Personal Identy">
+            </a>
+        </div>
+        <nav><!--Contact US 버튼을 네비게이션 기능을 활용하여 언제든 연락할 수 있게 구현 계획-->
+            <!--h ref="images/ContactNav.png"-->
+            <!--네비게이션 기능 구현에 관해 좌측에 어디든 이동가능한 버튼을  남겨두고, 우측에 연락 가능한 네비게이션을 구현하여 contact 페이지로 이동시킬 생각-->
+            <ul class="header__menu">
+                <li>
+                    <a class="header__menu__item active" href="#prologue">Prologue</a>
+                </li>
+                <li>
+                    <a class="header__menu__item " href="#viewpoint">Viewpoint</a>
+                </li>
+                <li>
+                    <a class="header__menu__item " href="#about">About</a>
+                </li>
+                <li>
+                    <a class="header__menu__item " href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a class="header__menu__item " href="#work">Work</a>
+                </li>
+                <li>
+                    <a class="header__menu__item " href="#epilogue">Epilogue</a>
+                </li>
+                <li>
+                    <a class="header__menu__item " href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
             </nav>
     </header>
     <!--Main>-->
@@ -267,7 +286,7 @@ background-position: center;}
         <ul><li><a href="#" target="blank" title ="my instagram link"><i class="fa-brands fa-instagram"></i></a></li>
         <li><a href="#" target="blank" title ="my facebook link"><i class="fa-brands fa-facebook"></i></a></li>
         <li><a href="#" target="blank" title ="my X link"><i class="fa-brands fa-x-twitter"></i></a></li></ul>
-        <p>&#169; 2024 Lee Jin Young-All rights reserved.</p></div>
+        <p>&#169; 2024 Lee Jin Young - All rights reserved.</p></div>
     </footer>
 </body>
 </html>
