@@ -13,7 +13,7 @@
                         box-sizing: border-box;
                     }
                     body {
-                        font-family: "Noto Sans KR", sans-serif;
+                        font-family: 'Noto Sans KR', 'MuseumClassic', sans-serif;
                     }
                     h1,
                     h2,
@@ -105,7 +105,7 @@ button:focus {
     max-width: 1280px;
     margin: auto;
     display: flex;
-    justify-content: space-between; align-items: center; padding: 0px 0px; 
+    justify-content: space-between; align-items: center; padding: 0px 0px;
 }
 
 .header__menu {
@@ -120,3 +120,23 @@ button:focus {
 .header__menu__item:hover {border-bottom: 1px solid var(--color-accent)}
 
 .header__menu__item.active {border: 1px solid var(--color-accent); border-radius: 4px;}
+
+/* prologue */
+#prologue {
+    background :center/cover no-repeat url(/images/prologue_bg.png); color: var(--color-text-light); text-align: center; padding: 6.25rem 1rem; padding-top: 26.25rem; }
+    .prologue__title {font-family: "Noto-Sarif KR", serif; Font-size: 4.5rem; font-weight: 700; margin-bottom: 5.625rem;}
+    .prologue__subtitle {font-family: "MuseumClassic", museum; Font-size: 3rem; font-weight: 700;}
+    .prologue__body {font-size: 1rem; font-weight: 400; }
+    .prologue__subtitle--strong {color: var(--color-accent);}
+    .prologue__body {font-size: 1rem; font-weight: 400; margin-bottom: 6.25rem;}
+    .prolouge__contact{background-color: var(--color-accent); padding: 1.25rem 3.125rem; color: var(--color-text); font-size: 1.25rem; font-weight: 700;}
+    
+.viewpoint__head {
+    font-family: Helvetica Neue LT Pro;
+    font-size: 75px;
+    margin: 5%;
+    width: 2000px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+ }

@@ -18,21 +18,17 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
      <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/e770fa2412.js" crossorigin="anonymous"></script>
-    <style media="all" id="fa-v4-font-face">/*!
-        * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
-        * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-        * Copyright 2024 Fonticons, Inc.
-        */@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-solid-900.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-brands-400.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-regular-400.ttf) format("truetype");unicode-range:u+f003,u+f006,u+f014,u+f016-f017,u+f01a-f01b,u+f01d,u+f022,u+f03e,u+f044,u+f046,u+f05c-f05d,u+f06e,u+f070,u+f087-f088,u+f08a,u+f094,u+f096-f097,u+f09d,u+f0a0,u+f0a2,u+f0a4-f0a7,u+f0c5,u+f0c7,u+f0e5-f0e6,u+f0eb,u+f0f6-f0f8,u+f10c,u+f114-f115,u+f118-f11a,u+f11c-f11d,u+f133,u+f147,u+f14e,u+f150-f152,u+f185-f186,u+f18e,u+f190-f192,u+f196,u+f1c1-f1c9,u+f1d9,u+f1db,u+f1e3,u+f1ea,u+f1f7,u+f1f9,u+f20a,u+f247-f248,u+f24a,u+f24d,u+f255-f25b,u+f25d,u+f271-f274,u+f278,u+f27b,u+f28c,u+f28e,u+f29c,u+f2b5,u+f2b7,u+f2ba,u+f2bc,u+f2be,u+f2c0-f2c1,u+f2c3,u+f2d0,u+f2d2,u+f2d4,u+f2dc}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-v4compatibility.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.2/webfonts/free-fa-v4compatibility.ttf) format("truetype");unicode-range:u+f041,u+f047,u+f065-f066,u+f07d-f07e,u+f080,u+f08b,u+f08e,u+f090,u+f09a,u+f0ac,u+f0ae,u+f0b2,u+f0d0,u+f0d6,u+f0e4,u+f0ec,u+f10a-f10b,u+f123,u+f13e,u+f148-f149,u+f14c,u+f156,u+f15e,u+f160-f161,u+f163,u+f175-f178,u+f195,u+f1f8,u+f219,u+f27a}</style>
+    <style media="all" id="fa-v4-font-face"></style>
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!--JS-->
     <script src="src/main.js" defer></script>
     <style>
-body {
+/*body { CSS내 이미지 링크삽입으로 현재 비 활성화 상태, 문제시 main page 내에서 이미지 사용할것
   background: url("images/prologue_bg.png"); height: 100vh; width: 100vh;
     background-size: cover; 
 background-repeat: no-repeat;
-background-position: center;}
+background-position: center;}*/
     </style>
 </head>     
 <body>
@@ -44,10 +40,7 @@ background-position: center;}
                 <img src="images/pi.ico" alt="Personal Identy">
             </a>
         </div>
-        <nav><!--Contact US 버튼을 네비게이션 기능을 활용하여 언제든 연락할 수 있게 구현 계획-->
-            <!--h ref="images/ContactNav.png"-->
-            <!--네비게이션 기능 구현에 관해 좌측에 어디든 이동가능한 버튼을  남겨두고, 우측에 연락 가능한 네비게이션을 구현하여 contact 페이지로 이동시킬 생각-->
-            <ul class="header__menu">
+        <nav>            <ul class="header__menu">
                 <li>
                     <a class="header__menu__item active" href="#prologue">Prologue</a>
                 </li>
@@ -83,7 +76,7 @@ background-position: center;}
         </a>
         </div>
   
-  <style> 
+  <style> /* contact us 버튼 구현성공*/
   .btn_godown { 
   display: block; 
   position: fixed; 
@@ -97,30 +90,47 @@ background-position: center;}
   cursor: pointer;
   padding: 9px 18px; 
   border-radius: 100%; 
-  } 
-  </style>
+  }
+  @font-face {
+        font-family: '국립박물관문화재단클래식B';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+  </style><!--header-->
+          <header class="container"></header>
     <!--Main>-->
     <main>
         <!--Prologue-->
         <section id="prologue">
-            <div class="prologue__container"></div>
-            <h2>I Have Amaze Interest in Edit to Videoes, let&#39;s observe inside of my brain</h2>
-            <font color="1be096"><span style="font-size:14pt;">Video Editor</span></font><span style="font-size:18pt;"> :: </span><span white-space: nowrap;> Lee Jin Young</span>
+            <br class ="prologue__container">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <!--<strong class="prologue__subtitle--strong">Dream Creator</strong>-->
+            <h2 class="prologue__subtitle">I Have Amaze Interest in Edit to Videoes, let&#39;s observe inside of my brain</h2>
+            <br>
+            <br>
+            <br>
+            <font color="1be096"><h2 class="prologue__subtitle">Video Editor</font>   ::   <span white-space: nowrap;> Lee Jin Young</span></h2>
+            </div>
             <!--a href="#contact">CONTACT US</!-->
         </section>
         <!--Viewpoint-->
+        <style>
+            body { background-color: #cddefb }
+            </style>
+        
         <section id="viewpoint">
             <div class="section__container">
-            <h4>Viewpoint</h4>
+            <div class="viewpoint__head">Viewpoint</div>
             <div class="viewpoint__top">
                 <div class="viewpoint__top__avatar">
                     <img src="images/profile_photo.png" alt="Profile Photos"></div>
             <div class="viewpoint__top__mypoint">
                 <div class="viewpoint__top__mypoint__top">
-                    <span style="font-size:75pt;">내가 생각하는</span>
+                    <span style="font-size:120pt;">내가 생각하는</span>
                 </div>
                 <div class="viewpoint__top__mypoint__bottom">
-                    <img src="images/double_quote_left.png" alt="double quote"><h2>Video Edit</h2><img src="images/double_quote_right.png" alt="double quote">
+                    <img src="images/double_quote_left.png" alt="double quote"><span style="font-size:75pt;">Video Edit</span><img src="images/double_quote_right.png" alt="double quote">
                 </div>
             </div>
             <div class="viewpoint__bottom"></div>
@@ -133,6 +143,9 @@ background-position: center;}
             </div>
         </section>
         <!--About-->
+        <style>
+            body { background-color: #ffffff }
+            </style>
         <section id="about">
             <div class="section__container">
                 <h4>About Me</h4>
